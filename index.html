@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="author" content="Pedro Rocha">
+
+    <title>Formulario com Progresso</title>
+
+</head>
+
+<body>
+
+    <form action="" class="form">
+        <h1 class="text-center">Registration Form</h1>
+        <!-- Progression bar -->
+        <div class="progressbar">
+            <div class="progress" id="progress"></div>
+            <div class="progress-step progress-step-active" data-title="Intro"></div>
+            <div class="progress-step" data-title="Contact"></div>
+            <div class="progress-step" data-title="ID"></div>
+            <div class="progress-step" data-title="Password"></div>
+
+        </div>
+
+        <!-- Steps -->
+        <div class="form-step form-step-active">
+            <div class="input-group">
+                <label for="username"> Username</label>
+                <input type="text" name="username" id="username" />
+            </div>
+            <div class="input-group">
+                <label for="position">Position</label>
+                <input type="text" name="position" id="position">
+            </div>
+            <div class="">
+                <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+            </div>
+        </div>
+
+        <div class="form-step">
+            <div class="input-group">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" />
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-prev ">Previous</a>
+                <a href="#" class="btn btn-next ">Next</a>
+            </div>
+        </div>
+
+        <div class="form-step">
+            <div class="input-group">
+                <label for="phone">Date of Birtch</label>
+                <input type="date" name="dob" id="dob" />
+            </div>
+            <div class="input-group">
+                <label for="ID">National ID</label>
+                <input type="number" name="ID" id="ID">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-prev ">Previous</a>
+                <a href="#" class="btn btn-next ">Next</a>
+            </div>
+        </div>
+
+
+        <div class="form-step">
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" />
+            </div>
+            <div class="input-group">
+                <label for="confirm">Confirme a senha</label>
+                <input type="password" name="confirmPassword" id="confirm">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-prev ">Previous</a>
+                <input type="submit" value="Submit" class="btn">
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+</body>
+
+</html>
